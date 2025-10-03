@@ -20,7 +20,7 @@
   const storedTheme = localStorage.getItem('theme');
   if (storedTheme) {
     document.documentElement.setAttribute('data-theme', storedTheme);
-    themeToggle.textContent = storedTheme === 'dark' ? '☀️' : '🌙';
+    themeToggle.textContent = storedTheme === 'dark' ? 'â˜€ï¸' : 'ðŸŒ™';
     themeToggle.setAttribute('aria-pressed', storedTheme === 'dark');
   }
 
@@ -30,12 +30,12 @@
     if (next) {
       document.documentElement.setAttribute('data-theme', 'dark');
       localStorage.setItem('theme', 'dark');
-      themeToggle.textContent = '☀️';
+      themeToggle.textContent = 'â˜€ï¸';
       themeToggle.setAttribute('aria-pressed', 'true');
     } else {
       document.documentElement.removeAttribute('data-theme');
       localStorage.removeItem('theme');
-      themeToggle.textContent = '🌙';
+      themeToggle.textContent = 'ðŸŒ™';
       themeToggle.setAttribute('aria-pressed', 'false');
     }
   });
@@ -76,7 +76,7 @@
     filterPubs(e.target.value);
   });
 
-  // Contact form handling (client-side). No backend — change to POST to your endpoint.
+  // Contact form handling (client-side). No backend â€” change to POST to your endpoint.
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
     contactStatus.textContent = '';
@@ -97,12 +97,12 @@
     }
 
     // Example: show success. To actually send, POST to a server or use a service like Formspree.
-    contactStatus.textContent = 'Thanks — your message is ready to be sent (demo mode).';
+    contactStatus.textContent = 'Thanks â€” your message is ready to be sent (demo mode).';
     contactForm.reset();
   });
 
   function validateEmail(email) {
-    // Basic, permissive email regex — for strict rules, use server-side validation
+    // Basic, permissive email regex â€” for strict rules, use server-side validation
     return /\S+@\S+\.\S+/.test(email);
   }
 
