@@ -272,6 +272,36 @@ html,body{
   color:var(--text);
 }
 
+/* Contact Links */
+.contact-links {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.contact-links a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
+/* photo formatting */
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+
 /* Responsiveness */
 @media (max-width:980px){
   .hero-grid{ grid-template-columns: 1fr; }
