@@ -1,171 +1,139 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Dr. Alex Example â€” Research, Teaching & Publications</title>
-  <meta name="description" content="Academic homepage for Dr. Alex Example â€” research, publications, teaching, and contact." />
-  <link rel="icon" href="data:;base64,iVBORw0KGgo="> <!-- placeholder favicon -->
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="site-header" role="banner">
-    <div class="container header-inner">
-      <a class="brand" href="#home">
-        <span class="brand-name">Leo Sciortino</span>
-        <span class="brand-title">Computer Science PhD Student at University of Utah</span>
-      </a>
-
-      <nav class="site-nav" aria-label="Primary navigation">
-        <button id="nav-toggle" aria-expanded="false" aria-controls="nav-list" class="nav-toggle">
-          <span class="sr-only">Toggle menu</span>
-          â˜°
-        </button>
-        <ul id="nav-list" class="nav-list">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#research">Research</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#teaching">Teaching</a></li>
-          <li><a href="#cv">CV</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="header-actions">
-          <button id="theme-toggle" class="icon-btn" aria-pressed="false" title="Toggle dark mode">ðŸŒ™</button>
-          <a class="cta" href="#contact">Email</a>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main" role="main">
-    <!-- HERO -->
-    <section id="home" class="hero container">
-      <div class="hero-grid">
-        <div class="hero-text">
-          <h1>Leo Sciortino</h1>
-          <p class="lead">Researcher in computational social science. I build tools and publish on social networks, causality, and data ethics.</p>
-          <p class="hero-links">
-            <a class="btn" href="#research">Explore Research</a>
-            <a class="btn ghost" href="#publications">View Publications</a>
-          </p>
-        </div>
-        <div class="hero-card">
-          <img src="leo.jpg" alt="Portrait of Leo Sciortino" class="profile-photo">
-        </div>
-      </div>
-    </section>
-
-    <!-- RESEARCH -->
-    <section id="research" class="section container">
-      <h2>Research</h2>
-      <p class="muted">My group investigates the design and social impact of machine-mediated interactions.</p>
-      <div class="cards-grid">
-        <article class="card">
-          <h3>Computational Social Science</h3>
-          <p>Network measurement, misinformation dynamics, and causality in field studies.</p>
-          <p class="meta">Selected projects: Network causality, Bot detection, Ethics-aware models</p>
-        </article>
-        <article class="card">
-          <h3>Human-AI Interaction</h3>
-          <p>Designing interpretable systems and evaluating human-centered outcomes.</p>
-          <p class="meta">Selected projects: Explainability, Human-in-the-loop evaluation</p>
-        </article>
-        <article class="card">
-          <h3>Open Tools & Data</h3>
-          <p>Reproducible pipelines and public datasets for reproducible science.</p>
-          <p class="meta">Selected projects: Open dataset release, Analysis toolkit</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- PUBLICATIONS -->
-    <section id="publications" class="section container">
-      <div class="publications-header">
-        <h2>Publications</h2>
-        <div class="pub-actions">
-          <label for="pub-filter" class="sr-only">Filter publications</label>
-          <input id="pub-filter" type="search" placeholder="Search publications (title, year, keyword)" aria-label="Search publications">
-        </div>
-      </div>
-
-      <ul id="pub-list" class="pub-list" aria-live="polite">
-        <!-- each li has data attributes used for client-side filtering -->
-        <li class="pub" data-year="2025" data-keywords="networks misinformation">
-          <h3 class="pub-title">Understanding misinformation through network simulations</h3>
-          <p class="pub-meta">Proceedings of the Example Conference, 2025. <a href="#" class="pub-link">PDF</a></p>
-        </li>
-        <li class="pub" data-year="2024" data-keywords="causality experiments">
-          <h3 class="pub-title">Causal inference in online experiments</h3>
-          <p class="pub-meta">Journal of Virtual Societies, 2024. <a href="#" class="pub-link">PDF</a></p>
-        </li>
-        <li class="pub" data-year="2023" data-keywords="ethics explainability">
-          <h3 class="pub-title">Toward ethical explainable AI for governance</h3>
-          <p class="pub-meta">Ethics & AI, 2023. <a href="#" class="pub-link">PDF</a></p>
-        </li>
-        <li class="pub" data-year="2022" data-keywords="datasets reproducibility">
-          <h3 class="pub-title">Open datasets for reproducible social science</h3>
-          <p class="pub-meta">Data Science Journal, 2022. <a href="#" class="pub-link">Dataset & Code</a></p>
-        </li>
-      </ul>
-    </section>
-
-    <!-- TEACHING -->
-    <section id="teaching" class="section container">
-      <h2>Teaching</h2>
-      <p class="muted">Courses I teach â€” materials and office hours listed below.</p>
-
-      <div class="teaching-grid">
-        <div class="card">
-          <h3>COMPSOC 501 â€” Methods in Computational Social Science</h3>
-          <p>Grad-level methods: experiment design, causal inference, network analysis.</p>
-          <p class="meta">Office hours: Tue 2â€“4pm (Zoom)</p>
-          <p><a href="#" class="link">Syllabus & readings</a></p>
-        </div>
-
-        <div class="card">
-          <h3>DATA 311 â€” Data Wrangling & Visualization</h3>
-          <p>Undergrad course focused on Python tooling, visualization, and data ethics.</p>
-          <p class="meta">Office hours: Thu 10â€“12pm (in-person)</p>
-          <p><a href="#" class="link">Course site</a></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CV -->
-    <section id="cv" class="section container">
-      <h2>Curriculum Vitae</h2>
-      <p class="muted">Selected appointments, education, awards, and professional service.</p>
-
-      <ul class="cv-list">
-        <li><strong>Assistant Professor</strong>, Department of Example â€” 2022â€“present</li>
-        <li><strong>PhD, Computer Science</strong>, University of Examples â€” 2022</li>
-        <li><strong>Best Paper Award</strong>, Example Conference â€” 2024</li>
-      </ul>
-
-      <p><a class="btn" href="#" download="alex_example_cv.pdf">Download full CV (PDF)</a></p>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section container">
-      <h2>Contact</h2>
-      <p class="muted">You can reach me through the following platforms:</p>
-      <ul class="contact-links">
-        <li><a href="https://github.com/leosciortino" target="_blank">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank">LinkedIn</a></li>
-        <li><a href="mailto:YOUR-EMAIL@example.com">YOUR-EMAIL@example.com</a></li>
-      </ul>
-    </section>
-
-  </main>
-
-  <footer class="site-footer" role="contentinfo">
-    <div class="container footer-inner">
-      <p>Â© <span id="year"></span> Leo Sciortino â€” Department of Example. <a href="#privacy">Privacy</a></p>
-      <p class="muted">Built with plain HTML, CSS & JavaScript â€” fork and adapt freely.</p>
-    </div>
-  </footer>
-
-  <script src="script.js" defer></script>
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>PhD Student Portfolio</title>
+      <style>
+         body {
+         font-family: Arial, sans-serif;
+         background-color: #f4f6f8;
+         color: #333;
+         margin: 0;
+         padding: 0;
+         }
+         header {
+         background-color: #003366;
+         color: white;
+         text-align: center;
+         padding: 20px;
+         }
+         h1 {
+         margin: 0 0 5px 0;
+         font-size: 28px;
+         }
+         p.subtitle {
+         margin: 0;
+         font-size: 14px;
+         color: #cfd8e3;
+         }
+         main {
+         max-width: 900px;
+         margin: 30px auto;
+         background: white;
+         border-radius: 8px;
+         padding: 20px 30px;
+         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+         }
+         section {
+         margin-bottom: 30px;
+         }
+         h2 {
+         border-bottom: 2px solid #003366;
+         padding-bottom: 5px;
+         margin-bottom: 15px;
+         color: #003366;
+         }
+         ul {
+         list-style: none;
+         padding: 0;
+         margin: 0;
+         }
+         li {
+         margin-bottom: 8px;
+         }
+         footer {
+         text-align: center;
+         background-color: #003366;
+         color: white;
+         padding: 15px;
+         font-size: 14px;
+         }
+         a {
+         color: #003366;
+         }
+         /* About section with side image */
+         #about {
+         display: flex;
+         align-items: flex-start;
+         gap: 20px;
+         }
+         #about img {
+         width: 180px;
+         border-radius: 50%;
+         }
+         #about div {
+         flex: 1;
+         }
+      </style>
+   </head>
+   <body>
+      <header>
+         <h1>Leo Sciortino</h1>
+         <p class="subtitle">CS PhD @ University of Utah</p>
+      </header>
+      <main>
+         <section id="about">
+            <img src="leo.jpg" alt="Profile picture">
+            <div>
+               <h2>About Me</h2>
+               <p>I am a first year PhD student in Computer Science at University of Utah, advised by Prof. <a href="https://users.cs.utah.edu/~mhall/">Mary Hall</a> and <a href="https://users.cs.utah.edu/~saday/">Prof. Saday Sadayappan</a>. I am interested in Compiler Optimization, Programming Languages, Computer Architecture, and their intersection. I graduated from the University of Rochester in 2025 with a BS in Computer Science and BA in Mathematics where I did research under Prof. Chen Ding.</p>
+            </div>
+         </section>
+         <section id="interests">
+            <h2>Research Interests</h2>
+            <ul>
+               <li>Compiler Optimization</li>
+               <li>Compilers For Accelerators</li>
+               <li>High Performance Computing</li>
+            </ul>
+         </section>
+         <section id="publications">
+            <h2>Publications</h2>
+            <ul>
+               <li>
+                  <strong>Continuous-Time Modeling of Zipfian Workload Locality</strong><br>
+                  Yiyang Wang, <em>Leo Sciortino</em>, Cheng Ding, Linlin Chen<br>
+                  <span>TOMPECS</span>
+               </li>
+               <li>
+                  <strong>A Critique of Deng's "P= NP"</strong><br> 
+                  Isabel Humphreys, Matthew Iceland, Harry Liuson, Dylan McKellips, <em>Leo Sciortino</em> <br>
+                  <span><a href="https://arxiv.org/pdf/2507.09018">arXiv</a>/span>
+               </li>
+            </ul>
+         </section>
+         <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+               <li>
+                  <strong>
+                  <a href="https://cs.rochester.edu/~sree/courses/csc-290-571/fall-2024/static/final-reports/CSC290_Final_report.pdf" target="_blank">
+                  Simulating NVLink Collective Communication Algorithms using ns-3
+                  </a>
+                  </strong>
+               </li>
+            </ul>
+         </section>
+         <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:leo.sciortino@utah.edu">leo.sciortino@utah.edu</a></p>
+            <p>GitHub: <a href="#">https://github.com/leosciortino</a></p>
+            <p>Google Scholar: <a href="https://scholar.google.com/citations?hl=en&user=R7UW9eYAAAAJ">View Profile</a></p>
+         </section>
+      </main>
+      <footer>
+         <p>© 2025 Leo Sciortino — PhD Student, University of Utah</p>
+      </footer>
+   </body>
 </html>
-
