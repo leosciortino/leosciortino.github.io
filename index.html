@@ -4,78 +4,97 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>PhD Student Portfolio</title>
-      <style>
-         body {
-         font-family: Arial, sans-serif;
-         background-color: #f4f6f8;
-         color: #333;
-         margin: 0;
-         padding: 0;
-         }
-         header {
-         background-color: #003366;
-         color: white;
-         text-align: center;
-         padding: 20px;
-         }
-         h1 {
-         margin: 0 0 5px 0;
-         font-size: 28px;
-         }
-         p.subtitle {
-         margin: 0;
-         font-size: 14px;
-         color: #cfd8e3;
-         }
-         main {
-         max-width: 900px;
-         margin: 30px auto;
-         background: white;
-         border-radius: 8px;
-         padding: 20px 30px;
-         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-         }
-         section {
-         margin-bottom: 30px;
-         }
-         h2 {
-         border-bottom: 2px solid #003366;
-         padding-bottom: 5px;
-         margin-bottom: 15px;
-         color: #003366;
-         }
-         ul {
-         list-style: none;
-         padding: 0;
-         margin: 0;
-         }
-         li {
-         margin-bottom: 8px;
-         }
-         footer {
-         text-align: center;
-         background-color: #003366;
-         color: white;
-         padding: 15px;
-         font-size: 14px;
-         }
-         a {
-         color: #003366;
-         }
-         /* About section with side image */
-         #about {
-         display: flex;
-         align-items: flex-start;
-         gap: 20px;
-         }
-         #about img {
-         width: 180px;
-         border-radius: 50%;
-         }
-         #about div {
-         flex: 1;
-         }
-      </style>
+	<style>
+	  body {
+		font-family: Arial, sans-serif;
+		background-color: #f4f6f8;
+		color: #333;
+		margin: 0;
+		padding: 0;
+	  }
+	  header {
+		background-color: #003366;
+		color: white;
+		text-align: center;
+		padding: 20px;
+	  }
+	  h1 {
+		margin: 0 0 5px 0;
+		font-size: 28px;
+	  }
+	  p.subtitle {
+		margin: 0;
+		font-size: 14px;
+		color: #cfd8e3;
+	  }
+	  main {
+		max-width: 900px;
+		margin: 30px auto;
+		background: white;
+		border-radius: 8px;
+		padding: 20px 30px;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+	  }
+	  section {
+		margin-bottom: 30px;
+	  }
+	  h2 {
+		border-bottom: 2px solid #003366;
+		padding-bottom: 5px;
+		margin-bottom: 15px;
+		color: #003366;
+	  }
+	  ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	  }
+	  li {
+		margin-bottom: 8px;
+	  }
+	  footer {
+		text-align: center;
+		background-color: #003366;
+		color: white;
+		padding: 15px;
+		font-size: 14px;
+	  }
+	  a {
+		color: #003366;
+	  }
+
+	  /* About section with side image */
+	  #about {
+		display: flex;
+		align-items: flex-start;
+		gap: 20px;
+	  }
+	  #about img {
+		width: 180px;
+		border-radius: 50%;
+		flex-shrink: 0;
+	  }
+	  #about div {
+		flex: 1;
+	  }
+
+	  /* 📱 Responsive layout for small screens */
+	  @media (max-width: 600px) {
+		#about {
+		  flex-direction: column;
+		  align-items: center;
+		  text-align: center;
+		}
+		#about img {
+		  width: 140px;
+		  margin-bottom: 15px;
+		}
+		#about div {
+		  width: 100%;
+		}
+	  }
+	</style>
+
    </head>
    <body>
       <header>
