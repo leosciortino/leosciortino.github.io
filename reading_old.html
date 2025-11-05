@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Paper Reading Group</title>
   <style>
     body {
@@ -81,58 +81,28 @@
     <section>
       <h2>Next Meeting</h2>
       <p><strong>Date:</strong> November 11th</p>
-      <p>
-        <strong>Paper:</strong>
-        <a href="https://arxiv.org/abs/2504.17577">TileLang: A Composable Tiled Programming Model for AI Systems</a>
-      </p>
+      <p><strong>Paper:</strong> <a href="https://arxiv.org/abs/2504.17577">TileLang: A Composable Tiled Programming Model for AI Systems</a></p>
       <p><strong>Presenter:</strong> Leo Sciortino</p>
     </section>
 
     <section>
       <h2>Upcoming Papers</h2>
       <ul>
-        <li>
-          <strong>November 18th:</strong>
-          <a href="https://arxiv.org/pdf/2207.04296">
-            “TensorIR: An Abstraction for Automatic Tensorized Program Optimization” – David Yue
-          </a>
-        </li>
+          <li><strong>November 18th:</strong><a href="https://arxiv.org/pdf/2207.04296"> “TensorIR: An Abstraction for Automatic Tensorized Program Optimization” – David Yue</a></li>
       </ul>
-    </section>
-
-    <section id="future-papers-section">
-      <h2>Future Papers</h2>
-      <ul id="future-papers-list"></ul>
     </section>
 
     <section>
       <h2>Past Discussions</h2>
-      <ul></ul>
+      <ul>
+        <!-- <li><a href="#">“BERT: Pre-training of Deep Bidirectional Transformers”</a></li> -->
+        <!-- <li><a href="#">“The Lottery Ticket Hypothesis”</a></li> -->
+      </ul>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Paper Reading Group. All rights reserved.</p>
   </footer>
-
-  <script>
-    // Load and display future papers from a JSON file
-    fetch("future_papers.json")
-      .then((response) => response.json())
-      .then((papers) => {
-        const list = document.getElementById("future-papers-list");
-        papers.forEach((paper) => {
-          const li = document.createElement("li");
-          li.innerHTML = `<a href="${paper.link}" target="_blank">${paper.title}</a>`;
-          list.appendChild(li);
-        });
-      })
-      .catch((error) => {
-        console.error("Error loading future papers:", error);
-        document.getElementById("future-papers-list").innerHTML =
-          "<li>Could not load future papers.</li>";
-      });
-  </script>
 </body>
 </html>
-
