@@ -5,43 +5,43 @@
   },
   {
     "title": "Verifying Peephole Rewriting In SSA Compiler IRs",
-    "link": "https://approxcomputing.sciencesconf.org/program?lang=en"
+    "link": "https://arxiv.org/pdf/2207.04296"
   },
   {
     "title": "The Deep Learning Compiler: A Comprehensive Survey",
-    "link": "https://approxcomputing.sciencesconf.org/program?lang=en"
+    "link": "https://arxiv.org/pdf/2002.03794"
   },
   {
     "title": "A Guide to Gen AI / LLM Vibecoding for Expert Programmers - Stochastic Lifestyle",
-    "link": "https://approxcomputing.sciencesconf.org/program?lang=en"
+    "link": "https://www.stochasticlifestyle.com/a-guide-to-gen-ai-llm-vibecoding-for-expert-programmers/"
   },
   {
     "title": "Toward Accelerated Stencil Computation by Adapting Tensor Core Unit on GPU",
-    "link": "https://approxcomputing.sciencesconf.org/program?lang=en"
+    "link": "https://dl.acm.org/doi/pdf/10.1145/3524059.3532392"
   },
   {
     "title": "ConvStencil: Transform Stencil Computation to Matrix Multiplication on Tensor Cores",
-    "link": "https://approxcomputing.sciencesconf.org/program?lang=en"
+    "link": "https://dl.acm.org/doi/pdf/10.1145/3627535.3638476"
   },
   {
     "title": "LoRAStencil: Low-Rank Adaptation of Stencil Computation on Tensor Cores",
-    "link": "https://approxcomputing.sciencesconf.org/program?lang=en"
+    "link": "https://www.likun.tech/pdf/sc24_lorastencil.pdf"
   },
   {
     "title": "Accelerating Reduction and Scan Using Tensor Core Unit",
-    "link": "https://approxcomputing.sciencesconf.org/program?lang=en"
+    "link": "https://arxiv.org/abs/1811.09736"
   },
   {
     "title": "Efficient and Precise Array Access Analysis",
-    "link": "https://approxcomputing.sciencesconf.org/program?lang=en"
+    "link": "https://dl.acm.org/doi/pdf/10.1145/509705.509708"
   },
   {
     "title": "Triton: An Intermediate Language and Compiler for Tiled Neural Network Computations",
-    "link": "https://approxcomputing.sciencesconf.org/program?lang=en"
+    "link": "https://www.eecs.harvard.edu/~htk/publication/2019-mapl-tillet-kung-cox.pdf"
   },
   {
     "title": "tcFFT: Accelerating Half-Precision FFT through Tensor Cores",
-    "link": "https://approxcomputing.sciencesconf.org/program?lang=en"
+    "link": "https://arxiv.org/pdf/2104.11471"
   },
   {
     "title": "LCPC 2023 Draft Paper",
